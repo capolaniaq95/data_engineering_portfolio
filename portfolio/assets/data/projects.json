@@ -1,0 +1,120 @@
+[
+  {
+    "id": "real-time-etl-pipeline",
+    "title": "Real-time ETL Pipeline",
+    "slug": "real-time-etl-pipeline",
+    "category": "etl",
+    "shortDescription": "Built a high-performance ETL pipeline processing millions of records daily using Apache Spark and Kafka.",
+    "technologies": ["Python", "Spark", "Kafka", "AWS"],
+    "featured": true,
+    "status": "completed",
+    "startDate": "2023-01-15",
+    "endDate": "2023-06-30",
+    "githubUrl": "https://github.com/username/real-time-etl-pipeline",
+    "liveUrl": "https://demo.example.com",
+    "thumbnail": "assets/images/projects/etl-pipeline-thumb.jpg",
+    "images": [
+      "assets/images/projects/etl-pipeline-1.jpg",
+      "assets/images/projects/etl-pipeline-2.jpg",
+      "assets/images/projects/etl-pipeline-3.jpg"
+    ],
+    "content": {
+      "overview": "This project involved designing and implementing a high-performance, real-time ETL pipeline capable of processing millions of records daily. The system was built to handle streaming data from various sources and transform it into actionable business insights.",
+      "challenge": "The main challenge was to create a scalable solution that could handle the increasing volume of data while maintaining low latency and high reliability. The existing batch processing system was becoming a bottleneck for real-time analytics requirements.",
+      "solution": "I designed a distributed streaming architecture using Apache Kafka for message queuing and Apache Spark Streaming for real-time data processing. The pipeline includes multiple stages of data validation, transformation, and enrichment before loading into the data warehouse.",
+      "architecture": "The system follows a microservices architecture with the following key components:\n\n- **Data Ingestion Layer**: Kafka producers capture data from various sources\n- **Stream Processing Layer**: Apache Spark processes data in real-time\n- **Storage Layer**: Optimized for both hot and cold data storage\n- **API Layer**: RESTful services for data access and monitoring",
+      "results": "The implementation resulted in:\n- **10x improvement** in data processing speed\n- **99.9% uptime** with robust error handling\n- **50% reduction** in infrastructure costs\n- **Real-time insights** available within seconds of data arrival",
+      "technologiesUsed": {
+        "core": ["Apache Spark", "Apache Kafka", "Python", "SQL"],
+        "cloud": ["AWS EMR", "AWS S3", "AWS Redshift"],
+        "monitoring": ["Prometheus", "Grafana", "ELK Stack"],
+        "orchestration": ["Apache Airflow"]
+      },
+      "lessonsLearned": "This project taught me the importance of:\n- Proper partitioning strategies for distributed computing\n- Implementing comprehensive monitoring and alerting\n- Designing for failure and recovery scenarios\n- Balancing real-time requirements with data quality",
+      "futureImprovements": "Potential enhancements include:\n- Machine learning integration for anomaly detection\n- Advanced data lineage tracking\n- Multi-region deployment for global scalability"
+    },
+    "metrics": {
+      "recordsProcessed": "10M+ daily",
+      "latency": "< 5 seconds",
+      "uptime": "99.9%",
+      "costReduction": "50%"
+    }
+  },
+  {
+    "id": "data-warehouse-modernization",
+    "title": "Data Warehouse Modernization",
+    "slug": "data-warehouse-modernization",
+    "category": "pipeline",
+    "shortDescription": "Led the migration from legacy on-premise data warehouse to modern cloud-based solution.",
+    "technologies": ["AWS", "Redshift", "Python", "Airflow"],
+    "featured": true,
+    "status": "completed",
+    "startDate": "2022-08-01",
+    "endDate": "2023-01-31",
+    "githubUrl": "https://github.com/username/data-warehouse-modernization",
+    "thumbnail": "assets/images/projects/data-warehouse-thumb.jpg",
+    "images": [
+      "assets/images/projects/data-warehouse-1.jpg",
+      "assets/images/projects/data-warehouse-2.jpg"
+    ],
+    "content": {
+      "overview": "Led the complete modernization of a legacy on-premise data warehouse to a scalable cloud-based solution, improving performance and reducing costs significantly.",
+      "challenge": "The existing Oracle-based data warehouse was struggling with increasing data volumes and user queries, leading to slow response times and high maintenance costs.",
+      "solution": "Designed and implemented a comprehensive migration strategy to Amazon Redshift with automated ETL pipelines using Apache Airflow and Python.",
+      "architecture": "The modernized architecture includes:\n\n- **Cloud Data Warehouse**: Amazon Redshift for high-performance analytics\n- **ETL Platform**: Apache Airflow for workflow orchestration\n- **Data Lake**: S3 for raw data storage\n- **Processing Engine**: EMR for complex transformations",
+      "results": "Achieved remarkable improvements:\n- **Query performance** improved by 80%\n- **Storage costs** reduced by 60%\n- **Maintenance overhead** decreased by 70%\n- **Scalability** increased to handle 5x more data",
+      "technologiesUsed": {
+        "core": ["Amazon Redshift", "Apache Airflow", "Python", "SQL"],
+        "cloud": ["AWS S3", "AWS EMR", "AWS Glue"],
+        "monitoring": ["CloudWatch", "DataDog"],
+        "versionControl": ["Git", "DBT"]
+      },
+      "lessonsLearned": "Key takeaways from this migration:\n- Importance of data modeling for cloud warehouses\n- Benefits of infrastructure as code for deployments\n- Value of automated testing for data pipelines\n- Need for comprehensive change management",
+      "futureImprovements": "Future enhancements planned:\n- Implementation of data mesh architecture\n- Integration of machine learning features\n- Advanced data governance and cataloging"
+    },
+    "metrics": {
+      "performanceImprovement": "80%",
+      "costReduction": "60%",
+      "dataVolume": "5x increase",
+      "maintenanceReduction": "70%"
+    }
+  },
+  {
+    "id": "ml-recommendation-engine",
+    "title": "ML Recommendation Engine",
+    "slug": "ml-recommendation-engine",
+    "category": "ml",
+    "shortDescription": "Built a machine learning recommendation system using collaborative filtering and deep learning.",
+    "technologies": ["Python", "TensorFlow", "Spark ML", "Redis"],
+    "featured": false,
+    "status": "completed",
+    "startDate": "2023-03-01",
+    "endDate": "2023-08-15",
+    "githubUrl": "https://github.com/username/ml-recommendation-engine",
+    "thumbnail": "assets/images/projects/ml-engine-thumb.jpg",
+    "images": [
+      "assets/images/projects/ml-engine-1.jpg"
+    ],
+    "content": {
+      "overview": "Developed a sophisticated recommendation engine combining collaborative filtering with deep learning techniques to provide personalized product recommendations.",
+      "challenge": "Create a recommendation system that could learn from user behavior patterns and provide accurate, real-time recommendations while handling millions of users and products.",
+      "solution": "Implemented a hybrid recommendation system using both collaborative filtering and neural networks, with real-time feature updates and A/B testing capabilities.",
+      "architecture": "The system architecture consists of:\n\n- **Data Collection**: Real-time user interaction tracking\n- **Feature Engineering**: Automated feature pipeline\n- **Model Training**: Distributed ML training on Spark\n- **Serving Layer**: Low-latency model inference\n- **Experimentation**: A/B testing framework",
+      "results": "The recommendation engine delivered:\n- **35% increase** in click-through rates\n- **Sub-second** response times for recommendations\n- **90% accuracy** in personalized suggestions\n- **Scalable to** millions of users and products",
+      "technologiesUsed": {
+        "core": ["TensorFlow", "PyTorch", "Apache Spark ML", "Python"],
+        "serving": ["Redis", "FastAPI", "Docker"],
+        "monitoring": ["MLflow", "Weights & Biases"],
+        "dataProcessing": ["Apache Kafka", "Apache Airflow"]
+      },
+      "lessonsLearned": "Important lessons learned:\n- Critical role of feature engineering in ML success\n- Importance of real-time model updates\n- Value of comprehensive A/B testing\n- Need for model interpretability in production",
+      "futureImprovements": "Planned improvements:\n- Integration of transformer-based architectures\n- Multi-modal recommendation capabilities\n- Advanced explainability features"
+    },
+    "metrics": {
+      "ctrImprovement": "35%",
+      "latency": "< 1 second",
+      "accuracy": "90%",
+      "scale": "Millions of users"
+    }
+  }
+]
